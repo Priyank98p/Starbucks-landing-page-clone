@@ -62,11 +62,18 @@ a {
     line-height: 21px;
 }
 
+.nav-links :hover{
+    color:#016a47;
+}
+
 .right-nav {
     display: flex;
     align-items: center;
     gap: 16px;
     letter-spacing: 1px;
+}
+.right-nav a:hover{
+    color: #016a47;
 }
 
 .store-location {
@@ -231,4 +238,77 @@ a {
 
 .btn4:hover {
     background-color: #005337;
+}
+
+.footer-content{
+    text-align: center;
+    padding: 23px 290px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    padding: 20px 40px;
+    border-top: 1px solid #ddd;
+}
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+.footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: black;
+}
+
+.footer-bottom {
+  padding: 40px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  font-family: "kanit", sans-serif;
+  color: #333;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #888;
 }
