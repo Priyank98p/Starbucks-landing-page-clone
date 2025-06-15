@@ -123,9 +123,8 @@ a {
 
 .text-col {
     flex: 1;
-    background-color: #5f4633;
+    background-color: #32462f;
     color: white;
-    padding: 60px 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -138,6 +137,7 @@ a {
     font-weight: 600;
     line-height: 60px;
     margin-bottom: 20px;
+    padding: 0 165px;
 }
 
 .text-col p {
@@ -145,9 +145,10 @@ a {
     font-weight: 400;
     line-height: 36px;
     margin-bottom: 30px;
+    padding: 0 80px;
 }
 
-.menu-button {
+.btn {
     padding: 10px 20px;
     border: 1px solid white;
     background-color: transparent;
@@ -155,13 +156,14 @@ a {
     width: 160px;
     align-self: center;
     border-radius: 20px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 17px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.menu-button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.btn:hover {
+    background-color: #233320;
 }
 
 .image-col {
@@ -175,13 +177,58 @@ a {
     display: block;
 }
 
-.second .text-col h1{
+.second .text-col {
+    background-color: #5f4633;
+}
+
+.second .text-col h1 {
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
 }
-.second .text-col p{
-    font-size: 24px;
+
+.second .text-col p {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.btn2 {
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 160px;
+    align-self: center;
+    border-radius: 20px;
     font-weight: 600;
-    line-height: 36px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: #4c392a;
+}
+
+.fourth .text-col {
+    background-color: #006442;
+}
+
+.btn4 {
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 160px;
+    align-self: center;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn4:hover {
+    background-color: #005337;
 }
