@@ -243,6 +243,9 @@ a {
 .footer-content{
     text-align: center;
     padding: 23px 290px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
 }
 
 .footer{
