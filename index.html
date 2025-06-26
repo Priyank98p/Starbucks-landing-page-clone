@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbucks landing page</title>
     <link rel="stylesheet" href="style.css">
- <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 </head>
 
 <body>
@@ -28,11 +28,34 @@
                 <button class="signin">Sign in</button>
                 <button class="Joinnow">Join now</button>
             </div>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <img id="hamburgerIcon" src="img/hamburger.svg" alt="menu">
+            </div>
+
+            <!-- Slide-Out Drawer Menu -->
+            <div class="mobile-drawer" id="mobileDrawer">
+                <div class="drawer-header">
+                </div>
+                <ul class="drawer-links">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Rewards</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+                <hr />
+                <div class="drawer-actions">
+                    <button class="signin">Sign in</button>
+                    <button class="Joinnow">Join now</button>
+                    <a href="#" class="store-location mobile-store">
+                        <img class="loc" src="img/location-sign-svgrepo-com.svg" alt=""> Find a store
+                    </a>
+                </div>
+            </div>
         </div>
         </div>
     </nav>
     <section>
-        <div class="first-section">
+        <div class="first-section first">
             <div class="text-col">
                 <h1><span>See You On the Patio</span></h1>
                 <p>
@@ -199,6 +222,7 @@
             &copy; 2025 Starbucks Coffee Company. All rights reserved.
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

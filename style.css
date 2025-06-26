@@ -62,8 +62,8 @@ a {
     line-height: 21px;
 }
 
-.nav-links :hover{
-    color:#016a47;
+.nav-links :hover {
+    color: #016a47;
 }
 
 .right-nav {
@@ -72,7 +72,8 @@ a {
     gap: 16px;
     letter-spacing: 1px;
 }
-.right-nav a:hover{
+
+.right-nav a:hover {
     color: #016a47;
 }
 
@@ -100,7 +101,7 @@ a {
 }
 
 .signin:hover {
-    background-color: #ebdfdf;
+    background-color: #ebe8e8;
 }
 
 .Joinnow {
@@ -240,7 +241,7 @@ a {
     background-color: #005337;
 }
 
-.footer-content{
+.footer-content {
     text-align: center;
     padding: 23px 290px;
     font-size: 14px;
@@ -248,70 +249,262 @@ a {
     font-weight: 400;
 }
 
-.footer{
+.footer {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 29px;
     padding: 20px 40px;
     border-top: 1px solid #ddd;
 }
+
 .footer-column h4 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
+
 .footer-column ul li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 .footer-column ul li a {
-  text-decoration: none;
-  color: #555;
-  font-size: 14px;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
 }
 
 .footer-column ul li a:hover {
-  color: black;
+    color: black;
 }
 
 .footer-bottom {
-  padding: 40px;
-  background-color: white;
-  border-top: 1px solid #ddd;
-  font-family: "kanit", sans-serif;
-  color: #333;
-  width: 100%;
+    padding: 40px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    font-family: "kanit", sans-serif;
+    color: #333;
+    width: 100%;
 }
 
 .social-icons {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .social-icons img {
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
 }
 
 .footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .footer-links a {
-  color: #000;
-  text-decoration: none;
-  font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .copyright {
-  font-size: 13px;
-  color: #888;
+    font-size: 13px;
+    color: #888;
+}
+
+@media (max-width:1300px) {
+
+    .first-section{
+        padding: 0;
+        max-height: 430px;
+    }
+    .text-col h1 {
+        font-size: 28px;
+        line-height: normal;
+        padding: 0 35px;
+        padding-top: 50px;
+    }
+    .text-col p{
+        padding: 0 10px;
+    }
+
+    .btn {
+        margin-bottom: 35px;
+    }
+
+    .btn2 {
+        margin-bottom: 35px;
+    }
+
+    .btn4 {
+        margin-bottom: 35px;
+    }
+
+    .footer-content {
+        padding: 25px;
+}
+
+}
+
+@media (max-width: 800px) {
+  .first-section {
+    flex-direction: column-reverse; /* Show text below image */
+    padding: 0;
+    max-height: unset;
+  }
+  .second{
+    flex-direction: column;
+  }
+  .fourth{
+    flex-direction: column;
+  }
+
+  .image-col img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .text-col {
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .text-col h1 {
+    font-size: 24px;
+    padding: 0 20px;
+    line-height: 32px;
+  }
+
+  .text-col p {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0 15px;
+  }
+
+  .btn, .btn2, .btn4 {
+    width: auto;
+    padding: 10px 20px;
+    margin: 15px auto 0;
+    font-size: 15px;
+  }
+}
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Drawer Menu */
+.mobile-drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-drawer.active {
+    right: 0;
+}
+
+/* Drawer Close Button */
+.drawer-header {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.drawer-header span {
+    cursor: pointer;
+}
+
+/* Links Styling */
+.drawer-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.drawer-links li {
+    margin-bottom: 15px;
+}
+
+.drawer-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.drawer-links a:hover {
+    color: #016a47;
+}
+
+/* Divider */
+hr {
+    border: 0.5px solid #eee;
+    margin: 20px 0;
+}
+
+/* Drawer Buttons and Store Link */
+.drawer-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.drawer-actions .signin,
+.drawer-actions .Joinnow {
+    width: fit-content;
+    padding: 6px 16px;
+    font-size: 14px;
+}
+
+.drawer-actions .store-location {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    gap: 6px;
+}
+
+.drawer-actions .store-location img {
+    width: 16px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .nav-links,
+    .right-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
